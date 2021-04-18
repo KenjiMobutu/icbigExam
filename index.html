@@ -3,9 +3,238 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>ICBIG Responsive</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	
+	<!-- Cookies -->
+	<div class="cookie_consent">
+		<a id="haut"></a>
+		<div class="container">
+			<div class="btn">
+				<button>
+						X
+				</button>
+			</div>
+			<p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre<a href="#" target="#"> Charte Cookies.</a></p>
+		</div>
+	</div>
+	<!-- Menu -->	
+	<nav>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Download</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img id="icbig" src="images/logo-icbig.png" alt="icbig">	
+			</div>
+			<div class="pub">
+				<a href="https://store.steampowered.com/app/1105420/Game_of_Thrones_Winter_is_Coming/" target="_blank" title="Play Game of Thrones">
+				<img id="got" src="images/hhxMhkG.jpg" alt="games_of_thrones" width="500" height="100">
+				</a>	
+			</div>
+			<div class="search">
+				<form action="/action_page.php">
+			 	<input type="text" placeholder="Entrez le nom du jeu..." name="search">
+			 	<button type="submit">Chercher</button>
+				</form>	
+			</div>	
+		</div>
+	</header>
+	<!-- MAIN -->
+	<div class="container-grid">
+	<!-- CATEGORIES -->
+		<div class="categories">
+				<div class="title">
+					<h3>categories</h3>
+				</div>
+				<nav class="menu">
+					<ul>
+						<div>
+							<li><i class="fas fa-film"></i><a href="#">Movies</a></li>
+							<li><i class="fas fa-music"></i><a href="#">Music</a></li>
+							<li><i class="fas fa-gamepad"></i><a href="#">Games</a>
+								<ul>
+									<div>
+									<li><a href="#">: Puzzles</a></li>
+									<li><a href="#">: Cards</a></li>
+									<li><a href="#">: Mazes</a></li>
+							</div>
+								</ul>
+							</li>
+							<li><i class="fas fa-theater-masks"></i><a href="#">Show</a></li>
+							<li><i class="fas fa-desktop"></i><a href="#">Software</a></li>
+							<li><i class="fas fa-book"></i><a href="#">Ebooks</a></li>
+
+							<div>
+								<li><i class="fas fa-paperclip"></i><a href="#">FAQ</a></li>
+								<li><i class="fas fa-sign-in-alt"></i><a href="#">Sign Up</a></li>
+							</div>
+						</div>
+					</ul>
+				</nav>
+
+				<div class="testimonials"> 
+					<div class="title">
+						<h3>Testimonials</h3>
+					</div>
+					<p>
+					"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"
+					<br><span>Julie Detras,BE</span>
+					</p>
+
+					<p>
+					"Time for me to chose the best solutions to my problems! Thanks"
+					<br><span>Mike Powell,UK</span>
+					</p>
+				</div>
+		</div>
+	<!-- STATISTICS -->
+		<div class="statistics">
+				<div class="title">
+					<h3>statistics</h3>
+				</div>
+				<!-- FIL D'ARIANE -->
+				<div class="fil">
+					<nav>
+						<ul>
+							<li ><a href="#">Games</a></li>
+							<li ><a href="#">Cards</a></li>
+							<li >Inscription</li>
+						</ul>
+					</nav>	
+				</div>
+				<!-- FORMULAIRE -->
+				<div class="formulaire">
+					<div class="keys">
+						<img src="images/keys.png" alt="keys">
+					</div>
+					
+					<div class="fb">
+						<img src="images/fb-google-plus-sign-in.png" alt="fb" width="250" >
+					</div>
+
+					<div  class="formulaireText">
+						<form action="/action_page.php">
+							<h3>Formulaire d'inscription</h3>
+							<p><br>Vous devez vous inscrire pour commencer à jouer. L'inscription est rapide et gratuite.</p>
+							<p>Vous êtes déjà membre? <a href="# ">Se connecter</a> </p>
+							<!-- IDENTIFICATION -->
+							<div class="login">
+								<label for="login">
+								</label>
+								<input type="text" placeholder="Identifiant" name="login" id="login">
+							</div> 
+							<div>
+								<input type="email" placeholder="adresse email" name="email" id="email">
+							</div>
+							<div>
+								<input type="email" placeholder="Confirmer adresse email" name="email" id="emailConfirm">
+							</div>
+							<div>
+								<input type="password" placeholder="Mot de passe" name="pwd" id="pwd">
+							</div>
+							<div>
+								<label>
+								Date de naissance :
+								</label>
+								<input type="date" name="bd" id="bd">
+							</div>
+
+							<!-- PAYS -->
+							<label for="pays">Pays :</label>
+							<select id="pays" name="pays">
+							  	<option value="null"></option>
+							    <option value="be">Belgique</option>
+							    <option value="fr">France</option>
+							    <option value="de">Allemagne</option>
+							    <option value="nl">Pays-Bas</option>
+							</select><br>
+
+							<!-- GENRE -->
+							<input type="radio" id="homme" name="genre" value="homme">
+								<label for="homme">Homme</label>
+								<input type="radio" id="femme" name="genre" value="femme">
+								<label for="femme">Femme</label>
+								<input type="radio" id="other" name="genre" value="autre">
+								<label for="autre">Autre</label>
+
+							<!-- ACCEPTE -->
+							<p><input type="checkbox">J'accepte les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité </a> de ICBig.</p>
+
+							<button>
+								<img width="120" src="images/signUpBtn.jpg" alt="inscrire">
+							</button>
+						</form>	
+					</div>
+				</div>
+				<!-- VIDEO -->
+				<div class="video">
+					<h3>Comment jouer?</h3>
+					<iframe width="400" height="345" src="https://www.youtube.com/embed/oLSMasFvzxE"></iframe>
+				</div>
+
+				<!-- TABLEAU SCORES -->
+				<div class="scores">
+					<h3>Classement</h3>
+					<table>
+						<thead>Meilleurs scores</thead>
+						<tr>
+							<th>#</th><th>Rank</th><th>Pseudo</th><th>Score</th>
+						</tr>
+
+						<div id="top3">
+							<tr id="top3">
+								<td rowspan="3"> Top 3</td><td>1</td><td>KillerPlayer</td><td>7500</td>
+							</tr>
+
+							<tr id="top3">
+								<td>2</td><td>TheFan</td><td>6500</td>
+							</tr>
+							<tr id="top3">
+								<td>3</td><td>HatMan</td><td>6350</td>
+							</tr>
+						</div>
+
+						<div >
+							<tr class="derniers">
+								<td class="fa-rotate-45"><i class="fas fa-arrow-up" data-fa-transform="rotate-45" style="color:green;"></i></td><td>4</td><td>Dillinguer</td><td>4000</td>
+							</tr>
+							<tr>
+								<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>5</td><td>BillyBoy</td><td>3995</td>
+							</tr>
+							<tr class="derniers">
+								<td class="fa-rotate--45"><i class="fas fa-arrow-down" style="color:red;"></i></td><td>6</td><td>HopeLess</td><td>3500</td>
+							</tr>
+						</div>	
+
+						<tfoot>
+								<tr>
+									<td colspan="4">Last update: May 2017</td>
+								</tr>	
+						</tfoot>
+						<caption>Mise à jour dans 15 minutes<br></caption>
+					</table>
+				</div> 
+
+				<div class="lienHautPage">
+					<a id="flecheHaut" href="#haut"><img width="15" src="images/top.png" alt="lienHautPage"></a>
+					<a href="#haut">Haut de page</a>
+				</div>
+		</div>		
+	<!-- FOOTER -->
+		<footer class="footer">
+		navbar
+		</footer>		
+	</div>
 	
 </body>
 </html>
