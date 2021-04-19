@@ -43,7 +43,6 @@ nav a:hover{
 }
 
 /* HEADER */
-
 header .container{
 	display: flex;
 	justify-content: space-around;
@@ -65,3 +64,127 @@ header .container{
   border: none;
   cursor: pointer;
 }
+/* CATEGORIES*/
+.categories{
+	background-color: white;
+}
+.categories a{
+	color: black;	
+	text-decoration: none;
+}
+.categories .menu{
+	display: flex;
+}
+.categories .menu li{
+	text-align: left;
+	padding: 1px;
+	border-top: 1px solid black;
+}
+.categories .title{
+	background-color: #18b4f7;
+	flex: 30%;
+	color: white;
+	padding: 1px;
+}
+
+/* FIL D'ARIANE */
+.fil{
+	display: flex;
+	justify-content: flex-start;
+}
+.fil a::after {
+    display: inline-block;
+    color: #000;
+    content: '>>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+    position: relative;
+}
+/* STATISTICS*/
+.statistics{
+	display: grid;
+	background-color: white;
+}
+.statistics .title{
+	background-color: goldenrod;
+	color: white;
+  	padding:1px;
+}
+.formulaireText{
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: auto 1fr;
+}
+/* TABLEAU SCORE */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  width: 300px;
+}
+th {
+  background-color: lightblue;
+}
+tfoot td {
+	background-color: lightblue;
+}
+ #top3{
+	background-color: lightgreen;
+}
+ .derniers{
+  background: lightgrey;
+}
+.fa-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 0px;
+}
+
+.fa-rotate--45 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 0px;
+}
+/* footer */
+footer {
+	color: darkgrey;
+	text-align: center;
+	font-size: 15px;
+	border-top-style: dotted;
+	border-top-width: 2px;
+	margin: 50px;
+	padding: 25px;
+	width: 100%;
+	grid-column: span 2;
+	position: relative;
+	right: 80px;
+}
+
+footer p {
+	padding: 30px;
+	text-align: center;
+}
+
+.footer a:link {
+  color: pink;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer ul li{
+	position: relative;
+	right: 500px;
+}
+/* HEADER */
+/* HEADER */
