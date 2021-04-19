@@ -86,7 +86,22 @@ header .container{
 	color: white;
 	padding: 1px;
 }
-
+/* TEMOIGNAGE */
+.testimonials{
+  position: relative;
+  top: 150px;
+  left: 0px;
+}
+.testimonials p{
+	text-align: right;
+	margin-right: 50px;
+	height: 100px;
+	padding: 10px;
+}
+.testimonials p span{
+	color: blue;
+	font-style: italic;	
+}
 /* FIL D'ARIANE */
 .fil{
 	display: flex;
@@ -105,16 +120,40 @@ header .container{
 .statistics{
 	display: grid;
 	background-color: white;
+	
 }
 .statistics .title{
 	background-color: goldenrod;
 	color: white;
   	padding:1px;
 }
+/* FORMULAIRE */
 .formulaireText{
-	display: grid;
-	grid-template-columns: 300px 1fr;
-	grid-template-rows: auto 1fr;
+	display: flex;
+	align-items: flex-start;
+	margin-left: 100px;
+	position: relative;
+	bottom: 250px;
+
+	
+}
+.formulaire-border{
+	position: relative;
+	left: 100px;
+	border: 1px solid black;
+	height: 500px;
+	width: 80%;
+}
+.fb{
+	display: flex;
+	justify-content: flex-end;
+
+	
+}
+/* VIDEO + TABLEAU SCORE */
+.video-scores{
+	display: flex;
+	justify-content: space-around;
 }
 /* TABLEAU SCORE */
 table, th, td {
@@ -154,6 +193,12 @@ tfoot td {
     position: relative;
     bottom: 0px;
 }
+.lienHautPage{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
 /* footer */
 footer {
 	color: darkgrey;
@@ -175,7 +220,7 @@ footer p {
 }
 
 .footer a:link {
-  color: pink;
+  color: white;
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
@@ -186,5 +231,60 @@ footer p {
 	position: relative;
 	right: 500px;
 }
-/* HEADER */
+/* MEDIA QUERIES */
+@media screen and (max-width:  800px){
+	body{
+		background-color: lightblue;
+		
+	}
+	header .container{
+		display: flex;
+		flex-direction: column;
+	}
+	header .container .logo{
+		position: relative;
+		left: 250px;
+	}
+	header .container .pub{
+		position: relative;
+		left: 50px;
+	}
+	.container-grid{
+		display: flex;
+		flex-direction: column;
+	}
+	.categories{
+		min-height: 800px;
+	}
+	.categories .menu{
+		justify-content: center;
+	}
+	.categories nav a{
+		flex-direction: row;
+		margin:  0 10px;
+
+	}
+	.testiomonials {
+		flex-direction: row;
+		justify-content: center;
+		min-height: 500px;
+	}
+	.formulaire-border{
+		flex-direction: column;
+	}
+	.video-scores{
+		flex-direction: column;
+	}
+	.video{
+		position: relative;
+		right: -200px;
+	}
+	.scores{
+		position: relative;
+		right: -250px;
+	}
+	.lienHautPage{
+	}
+
+}
 /* HEADER */
